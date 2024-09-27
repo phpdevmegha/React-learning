@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useReducer } from 'react';
-import AuthContext from '../context/AuthContext';
+import React, {  useEffect, useReducer } from 'react';
 import { AddTodoForm }  from '../components/AddTodoForm';
 import { TodoList } from '../components/ToDoList';
 
@@ -21,7 +20,6 @@ const todosReducer = (state, action) => {
 };
 
 export const TodoListPage = () => {
-  // const { dispatch } = useContext(AuthContext);
   const [todos, dispatchTodos] = useReducer(todosReducer, initialTodos);
 
   useEffect(() => {
