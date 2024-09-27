@@ -21,7 +21,7 @@ const todosReducer = (state, action) => {
 };
 
 export const TodoListPage = () => {
-  const { dispatch } = useContext(AuthContext);
+  // const { dispatch } = useContext(AuthContext);
   const [todos, dispatchTodos] = useReducer(todosReducer, initialTodos);
 
   useEffect(() => {
